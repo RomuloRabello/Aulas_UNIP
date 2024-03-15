@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		Pessoa pes = new Pessoa();
+				
+		pes.nome = scan.next();
+		pes.cpf = scan.next();
+		pes.nasc = new Data();
+		pes.nasc.dia = scan.nextInt();
+		pes.nasc.mes = scan.nextInt();
+		pes.nasc.ano = scan.nextInt();
+		pes.mostrarPessoa();
+		
+		Conta conta = new Conta();
+		conta.titular = pes;
+		conta.abertura = new Data();
+		conta.abertura.dia = scan.nextInt();
+		conta.abertura.mes = scan.nextInt();
+		conta.abertura.ano = scan.nextInt();
+		conta.saldo = scan.nextDouble();
+		
+		
+		
+		
+		
+		
+		
+
+	}
+
+}

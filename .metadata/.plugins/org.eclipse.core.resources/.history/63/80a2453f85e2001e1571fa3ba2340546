@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Teste {
+
+	public static void main(String[] args) {
+		Scanner scan = new Scanner(System.in);
+		Pessoa pes = new Pessoa();
+		
+		System.out.println("Informe seu nome: ");
+		pes.nome = scan.next();
+		System.out.println("Informe seu CPF: ");
+		pes.cpf = scan.next();
+		System.out.println("Informe o dia, mês e ano do seu nascimento(somente números) ");
+		pes.nasc = new Data();
+		pes.nasc.dia = scan.nextInt();
+		pes.nasc.mes = scan.nextInt();
+		pes.nasc.ano = scan.nextInt();
+		pes.mostrarPessoa();
+		
+		Conta conta = new Conta();
+		conta.titular = pes;
+		conta.abertura = new Data();
+		conta.abertura.dia = scan.nextInt();
+		conta.abertura.mes = scan.nextInt();
+		conta.abertura.ano = scan.nextInt();
+		System.out.println("Qual será o saldo depositado para abertura de conta? ");
+		conta.saldo = scan.nextDouble();
+	}
+
+}

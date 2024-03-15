@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+E:\003 DESENVOLVIMENTO DE SOFTWARE\Dev JAVA\Aulas e Exercícios\15-03\.metadata\.plugins\org.eclipse.jdt.core
+3211023592.index
+1865797976.index
+1205037215.index
